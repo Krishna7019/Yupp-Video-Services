@@ -1,0 +1,88 @@
+In JS, var, let, const are the keywords used to declare variables each with 
+distinct characteristics regarding scope, reassignability and hoisting
+
+I. var : 
+    a. Variables declared with 'var' have function scope or global scope. 
+        This means they are accessible throughout the entire function in which they are declared, 
+        or globally if declared outside of any function.
+
+    b. Variables declared with 'var' can be updated and re-declared within its scope.
+
+    c. Variables declare with 'var' are hoisted to the top of their function or global scope and initialized with undefined.
+
+
+II. let:
+    a. Variables declared with 'let' have block scope. 
+        This means they are only accessible within the block where they are defined.
+
+    b. Variables declared with 'let' can be updated but not re-declared within the same scope. 
+
+    c. variables declared with 'let' are hoisted to the top of their block scope, 
+        but they are not initialized. Attempting to access them before their declaration results in a ReferenceError.
+
+
+III. const: 
+    a. Variables declared with 'const' also have block scope, similar to ''let'. 
+        Additionally, const declarations must be initialized at the time of declaration 
+        and cannot be reassigned after initialization.
+
+    b. Variables declared with 'const' can't be updated or re-declared within its scope.
+
+    c. variables declared with 'const' are hoisted to the top of their block scope, 
+        but they are not initialized. Attempting to access them before their declaration results in a ReferenceError.
+
+
+                                    DATA TYPES
+
+In JS, data types are categorized into two main groups: 
+i. primitive types
+ii. non-primitive types
+
+I. Primitive Data Types:
+ 
+ Primitive data types represent single, immutable values. When a variable of a primitive type is assigned to another variable, a copy of the value is created.
+
+ a. Number - Represents both integer and floating-point numbers.
+    let age = 30 (Integer)
+    let weight = 50.5(Floatin-point)
+
+b. String - Represents textual data, enclosed in single quotes, double quotes, or backticks.
+    let fruit = 'apple'
+
+c. Boolean - Represents a logical entity and can only have two values: true or false.
+     let isActive = true
+
+d. Undefined - Indicates that a variable has been declared but has not yet been assigned a value.
+    let a; (vslue is undefined)
+
+e. null - Represents the intentional absence of any object value. It is a primitive value.
+    let value = null;
+    
+f. BigInt - Represents whole numbers larger than Number.MAX_SAFE_INTEGER.
+      let bigInteger = 9007199254740991n; // 'n' indicates a BigInt
+
+g. Symbol -  Represents a unique and immutable value, often used as object property keys to avoid naming collisions.
+    const id = Symbol('uniqueId');
+
+II. Non Promitive Data Types: 
+
+Non-primitive data types, also known as reference types, can hold multiple values or complex data structures. 
+When a variable of a non-primitive type is assigned to another variable, a reference (memory address) to the original value is copied, 
+not the value itself.
+
+a. Object - A collection of key-value pairs, where keys are strings (or Symbols) and values can be any data type.
+
+      let person = {
+        firstName: "John",
+        lastName: "Doe"
+    };
+
+b. Array - An ordered list of values, indexed numerically starting from zero. Arrays are a specific type of Object.
+
+    let fruits = ['apple', 'orange', 'mango']
+
+c. Function - A block of reusable code that can be executed. Functions are also a specific type of Object in JavaScript.
+
+     function greeting(name) {
+        return `Hello, ${name}!`;
+    }
