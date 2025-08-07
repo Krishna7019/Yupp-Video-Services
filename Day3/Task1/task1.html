@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <link rel="stylesheet" href="task1.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    </head>
+    <body>
+        <div>
+            <div class="sidebar">
+                <ul >
+                    <li class="menu"> <i class="fa-solid fa-bars"></i> 
+                        <span>Menu 1</span>
+                    </li>
+
+                    <li class="menu"> <i class="fa-solid fa-bars"></i> 
+                        <span>Menu 2</span>
+                    </li>
+
+                    <li class="menu"> <i class="fa-solid fa-bars"></i> 
+                        <span>Menu 3</span>
+                    </li>
+
+                    <li class="menu"> <i class="fa-solid fa-bars"></i> 
+                        <span>Menu 4</span>
+                    </li>
+
+                    <li class="menu"> <i class="fa-solid fa-bars"></i>
+                        <span>Menu 5</span>
+                    </li>
+
+                    <li class="menu"> <i class="fa-solid fa-bars"></i> 
+                        <span>Menu 6</span>
+                    </li>
+
+                    <li class="menu"> <i class="fa-solid fa-bars"></i> 
+                        <span>Menu 7</span>
+                    </li>
+
+                    <li class="menu"> <i class="fa-solid fa-bars"></i> 
+                        <span>Menu 8</span>
+                    </li>
+
+                    <li class="menu"> <i class="fa-solid fa-bars"></i> 
+                        <span>Menu 9</span>
+                    </li>
+
+                    <li class="menu"> <i class="fa-solid fa-bars"></i> 
+                        <span>Menu 10</span>
+                    </li>
+                </ul>
+            </div>
+            <div class="content">
+                <div class="mySlides"> 
+                    <img src="https://thumbs.dreamstime.com/b/wild-african-cheetah-21690999.jpg" alt="wild-african-cheetah" class="image"/>
+                </div>
+                
+                 <div class="mySlides"> 
+                    <img src="https://www.w3schools.com/howto/img_mountains_wide.jpg" alt="mountains wide" class="image"/>
+                </div>
+              
+                <div class="mySlides"> 
+                    <img src="https://www.w3schools.com/howto/img_snow_wide.jpg" alt="snow wide" class="image"/>
+                </div>
+
+                <div class="mySlides"> 
+                    <img src="https://www.w3schools.com/howto/img_nature_wide.jpg" alt="nature" class="image"/>
+                </div>
+
+                <div class="mySlides"> 
+                    <img src="https://images.pexels.com/photos/15143046/pexels-photo-15143046.jpeg" alt="image5" class="image"/>
+                </div>
+
+                <div class="mySlides"> 
+                    <img src="https://images.pexels.com/photos/3967669/pexels-photo-3967669.jpeg" alt="image6" class="image"/>
+                </div>
+
+                <div class="mySlides"> 
+                    <img src="https://images.pexels.com/photos/27681652/pexels-photo-27681652.jpeg" alt="image7" class="image"/>
+                </div>
+
+                <div class="mySlides"> 
+                    <img src="https://images.pexels.com/photos/29996343/pexels-photo-29996343.jpeg" alt="image8" class="image"/>
+                </div>
+
+                <div class="mySlides"> 
+                    <img src="https://as2.ftcdn.net/jpg/02/46/26/63/1000_F_246266381_0cJ8GoFpISVzHWpBHvLD3gxYQH9tTX5K.jpg" alt="image9" class="image"/>
+                </div>
+
+                <div class="mySlides"> 
+                    <img src="https://images.pexels.com/photos/12040663/pexels-photo-12040663.jpeg" alt="image10" class="image"/>
+                </div>
+
+                <div class="mySlides"> 
+                    <img src="https://as2.ftcdn.net/jpg/05/39/94/57/1000_F_539945724_QKDi3ecDu4k2951MfodjvtLLUlUdcpV4.jpg" alt="image11" class="image"/>
+                </div>
+
+                <br/>
+
+            <div class="dots-container">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+                <span class="dot" onclick="currentSlide(6)"></span>
+                <span class="dot" onclick="currentSlide(7)"></span>
+                <span class="dot" onclick="currentSlide(8)"></span>
+                <span class="dot" onclick="currentSlide(9)"></span>
+                <span class="dot" onclick="currentSlide(10)"></span>
+                <span class="dot" onclick="currentSlide(11)"></span>
+            </div>
+
+            <div class="cards-container">
+                <img src="https://thumbs.dreamstime.com/b/wild-african-cheetah-21690999.jpg" alt="wild-african-cheetah" class="card"
+                onclick="currentSlide(1)"/>
+
+                <img src="https://www.w3schools.com/howto/img_mountains_wide.jpg" alt="mountains wide"  class="card"
+                onclick="currentSlide(2)"/>
+
+                <img src="https://www.w3schools.com/howto/img_snow_wide.jpg" alt="snow wide" class="card" 
+                onclick="currentSlide(3)"/>
+
+                <img src="https://www.w3schools.com/howto/img_nature_wide.jpg" alt="nature" class="card"
+                onclick="currentSlide(4)"/>
+
+                <img src="https://images.pexels.com/photos/15143046/pexels-photo-15143046.jpeg" alt="image5" class="card"
+                onclick="currentSlide(5)"/>
+
+                <img src="https://images.pexels.com/photos/3967669/pexels-photo-3967669.jpeg" alt="image6" class="card"
+                onclick="currentSlide(6)"/>
+
+                <img src="https://images.pexels.com/photos/27681652/pexels-photo-27681652.jpeg" alt="image7" class="card" 
+                onclick="currentSlide(7)"/>
+
+                <img src="https://images.pexels.com/photos/29996343/pexels-photo-29996343.jpeg" alt="image8" class="card" 
+                onclick="currentSlide(8)"/>
+
+                <img src="https://as2.ftcdn.net/jpg/02/46/26/63/1000_F_246266381_0cJ8GoFpISVzHWpBHvLD3gxYQH9tTX5K.jpg" alt="image9" class="card"
+                onclick="currentSlide(9)"/>
+
+                <img src="https://images.pexels.com/photos/12040663/pexels-photo-12040663.jpeg" alt="image10" class="card"
+                onclick="currentSlide(10)"/>
+
+                <img src="https://as2.ftcdn.net/jpg/05/39/94/57/1000_F_539945724_QKDi3ecDu4k2951MfodjvtLLUlUdcpV4.jpg" alt="image11" class="card"
+                onclick="currentSlide(11)"/>
+
+            </div>
+
+
+            <div class="cards-container">
+                <img src="https://thumbs.dreamstime.com/b/wild-african-cheetah-21690999.jpg" alt="wild-african-cheetah" class="card"
+                onclick="currentSlide(1)"/>
+
+                <img src="https://www.w3schools.com/howto/img_mountains_wide.jpg" alt="mountains wide"  class="card"
+                onclick="currentSlide(2)"/>
+
+                <img src="https://www.w3schools.com/howto/img_snow_wide.jpg" alt="snow wide" class="card" 
+                onclick="currentSlide(3)"/>
+
+                <img src="https://www.w3schools.com/howto/img_nature_wide.jpg" alt="nature" class="card"
+                onclick="currentSlide(4)"/>
+
+                <img src="https://images.pexels.com/photos/15143046/pexels-photo-15143046.jpeg" alt="image5" class="card"
+                onclick="currentSlide(5)"/>
+
+                <img src="https://images.pexels.com/photos/3967669/pexels-photo-3967669.jpeg" alt="image6" class="card"
+                onclick="currentSlide(6)"/>
+
+                <img src="https://images.pexels.com/photos/27681652/pexels-photo-27681652.jpeg" alt="image7" class="card" 
+                onclick="currentSlide(7)"/>
+
+                <img src="https://images.pexels.com/photos/29996343/pexels-photo-29996343.jpeg" alt="image8" class="card" 
+                onclick="currentSlide(8)"/>
+
+                <img src="https://as2.ftcdn.net/jpg/02/46/26/63/1000_F_246266381_0cJ8GoFpISVzHWpBHvLD3gxYQH9tTX5K.jpg" alt="image9" class="card"
+                onclick="currentSlide(9)"/>
+
+                <img src="https://images.pexels.com/photos/12040663/pexels-photo-12040663.jpeg" alt="image10" class="card"
+                onclick="currentSlide(10)"/>
+
+                <img src="https://as2.ftcdn.net/jpg/05/39/94/57/1000_F_539945724_QKDi3ecDu4k2951MfodjvtLLUlUdcpV4.jpg" alt="image11" class="card"
+                onclick="currentSlide(11)"/>
+
+            </div>
+
+            </div>
+        
+        </div>
+        <script src="task1.js"></script>
+    </body>
+</html>
